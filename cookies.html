@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cookie siyosati — DasturLab</title>
+<meta name="description" content="DasturLab cookie siyosati va cookie-fayllarni boshqarish.">
+<link rel="canonical" href="https://dasturlab.example.com/cookies.html">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">Dastur<span>Lab</span></a>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <div class="lang-switch">
+        <button id="lang-toggle" aria-haspopup="true">🌐 <span id="lang-label">UZ</span></button>
+        <div class="lang-menu" id="lang-menu" role="menu">
+          <button data-lang="uz" role="menuitem">O‘zbek</button>
+          <button data-lang="ru" role="menuitem">Русский</button>
+          <button data-lang="en" role="menuitem">English</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="section legal-page">
+  <div class="container" style="max-width:760px;">
+    <span class="eyebrow">Huquqiy</span>
+    <h1>Cookie siyosati</h1>
+    <p>Cookie — foydalanuvchi qurilmasida saqlanadigan kichik matn fayli bo'lib, sayt tajribasini yaxshilash uchun ishlatiladi.</p>
+
+    <h2>1. Qanday cookie-fayllardan foydalanamiz</h2>
+    <ul>
+      <li><strong>Zarur cookie-fayllar</strong> — til va rejim (dark/light) tanlovini eslab qolish uchun.</li>
+      <li><strong>Analitik cookie-fayllar</strong> — saytdan foydalanishni anonim tarzda tahlil qilish uchun (agar yoqilgan bo'lsa).</li>
+    </ul>
+
+    <h2>2. Roziligingizni boshqarish</h2>
+    <p>Saytga birinchi tashrifingizda cookie-fayllar haqida banner ko'rsatiladi. Tanlovingizni istalgan vaqtda quyidagi tugma orqali qayta o'rnatishingiz mumkin.</p>
+    <button class="btn btn-ghost" id="reset-consent">Cookie tanlovini qayta o'rnatish</button>
+    <p id="reset-msg" style="color:var(--success); display:none; margin-top:10px;">Tanlov qayta o'rnatildi. Bosh sahifaga qaytganingizda banner qayta ko'rsatiladi.</p>
+
+    <h2>3. Cookie-fayllarni o'chirish</h2>
+    <p>Brauzeringiz sozlamalari orqali cookie-fayllarni istalgan vaqtda o'chirishingiz mumkin, biroq bu ba'zi funksiyalarga (masalan, til tanlovi) ta'sir qilishi mumkin.</p>
+  </div>
+</main>
+<footer>
+  <div class="container footer-bottom">
+    <span>© 2026 DasturLab. Barcha huquqlar himoyalangan.</span>
+    <a href="index.html">Bosh sahifaga qaytish</a>
+  </div>
+</footer>
+<script src="js/i18n.js"></script>
+<script src="js/legal.js"></script>
+<script>
+document.getElementById("reset-consent").addEventListener("click", () => {
+  localStorage.removeItem("dl_cookie_consent");
+  document.getElementById("reset-msg").style.display = "block";
+});
+</script>
+</body>
+</html>

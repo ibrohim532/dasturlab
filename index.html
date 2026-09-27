@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DasturLab — Professional Software Development Company</title>
+<meta name="description" content="DasturLab — web saytlar, mobil ilovalar, Telegram botlar, AI va zamonaviy dasturiy yechimlar yaratadigan IT kompaniya.">
+<link rel="canonical" href="https://dasturlab.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DasturLab — Professional Software Development Company">
+<meta property="og:description" content="Web saytlar, mobil ilovalar, Telegram botlar, AI va zamonaviy dasturiy yechimlar.">
+<meta property="og:url" content="https://dasturlab.example.com/">
+<meta property="og:image" content="https://dasturlab.example.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DasturLab — Professional Software Development Company">
+<meta name="twitter:description" content="Web saytlar, mobil ilovalar, Telegram botlar, AI va zamonaviy dasturiy yechimlar.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💠</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loading-screen"><div class="loader-mark">Dastur<span style="color:var(--accent);">Lab</span></div><div class="loader-bar"><span></span></div></div>
+
+<header class="navbar">
+  <div class="container">
+    <a href="#top" class="brand">Dastur<span>Lab</span></a>
+    <nav class="nav-links" aria-label="Asosiy navigatsiya">
+      <a href="#top" data-i18n="nav.home">Bosh sahifa</a>
+      <a href="#about" data-i18n="nav.about">Biz haqimizda</a>
+      <a href="#services" data-i18n="nav.services">Xizmatlar</a>
+      <a href="#projects" data-i18n="nav.projects">Loyihalar</a>
+      <a href="#tech" data-i18n="nav.tech">Texnologiyalar</a>
+      <a href="#team" data-i18n="nav.team">Jamoa</a>
+      <a href="#blog" data-i18n="nav.blog">Blog</a>
+      <a href="#contact" data-i18n="nav.contact">Aloqa</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <div class="lang-switch">
+        <button id="lang-toggle" aria-haspopup="true" aria-label="Tilni tanlash">🌐 <span id="lang-label">UZ</span></button>
+        <div class="lang-menu" id="lang-menu" role="menu">
+          <button data-lang="uz" role="menuitem">O‘zbek</button>
+          <button data-lang="ru" role="menuitem">Русский</button>
+          <button data-lang="en" role="menuitem">English</button>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn-primary" style="display:none;" id="nav-cta-desktop" data-i18n="nav.cta">Loyiha boshlash</a>
+      <button class="hamburger" id="hamburger" aria-label="Menyu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="#top" data-i18n="nav.home">Bosh sahifa</a>
+    <a href="#about" data-i18n="nav.about">Biz haqimizda</a>
+    <a href="#services" data-i18n="nav.services">Xizmatlar</a>
+    <a href="#projects" data-i18n="nav.projects">Loyihalar</a>
+    <a href="#tech" data-i18n="nav.tech">Texnologiyalar</a>
+    <a href="#team" data-i18n="nav.team">Jamoa</a>
+    <a href="#blog" data-i18n="nav.blog">Blog</a>
+    <a href="#contact" data-i18n="nav.contact">Aloqa</a>
+    <a href="#contact" class="btn btn-primary btn-block" data-i18n="nav.cta">Loyiha boshlash</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <h1 data-i18n="hero.title">G‘oyangizni raqamli mahsulotga aylantiramiz.</h1>
+        <p data-i18n="hero.subtitle">DasturLab — zamonaviy texnologiyalar yordamida biznes va yangi g‘oyalar uchun professional raqamli yechimlar yaratadigan dasturchilar jamoasi.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Loyiha boshlash</a>
+          <a href="#projects" class="btn btn-ghost" data-i18n="hero.cta2">Bizning loyihalar</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-code">const idea = await dasturlab.build(yourVision);</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats section" style="padding:64px 0;">
+    <div class="container grid grid-4" id="stats-grid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="about.eyebrow">Biz haqimizda</span>
+        <h2 data-i18n="about.title">Zamonaviy raqamli mahsulotlar yaratamiz</h2>
+        <p>DasturLab — biznes va yangi g‘oyalar uchun sifatli veb-saytlar, mobil ilovalar va dasturiy ta'minot yaratadigan yosh va tajribali jamoa.</p>
+      </div>
+      <div class="grid grid-2" style="margin-bottom:56px;">
+        <div class="card reveal">
+          <h3 data-i18n="about.mission.title">Vazifamiz</h3>
+          <p data-i18n="about.mission.text">Biznes va yangi g‘oyalarni ishonchli, sifatli dasturiy mahsulotga aylantirish.</p>
+        </div>
+        <div class="card reveal">
+          <h3 data-i18n="about.vision.title">Vizyonimiz</h3>
+          <p data-i18n="about.vision.text">Markaziy Osiyoda ishonchli texnologik hamkorga aylanish.</p>
+        </div>
+      </div>
+      <h3 data-i18n="about.values.title" style="margin-bottom:20px;">Qadriyatlarimiz</h3>
+      <div class="grid grid-4" id="values-grid" style="margin-bottom:64px;"></div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="services.eyebrow">Xizmatlar</span>
+        <h2 data-i18n="services.title">Biz nima qila olamiz</h2>
+      </div>
+      <div class="grid grid-4" id="services-grid"></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="process.eyebrow">Jarayon</span>
+        <h2 data-i18n="process.title">Biz qanday ishlaymiz</h2>
+      </div>
+      <div class="process-grid" id="process-grid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="projects.eyebrow">Loyihalar</span>
+        <h2 data-i18n="projects.title">Bizning ishlarimiz</h2>
+      </div>
+      <div class="filter-bar" id="filter-bar"></div>
+      <div class="grid grid-3" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES -->
+  <section class="section" id="tech">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="tech.eyebrow">Texnologiyalar</span>
+        <h2 data-i18n="tech.title">Ishlatadigan texnologiyalarimiz</h2>
+      </div>
+      <div class="grid grid-4" id="tech-grid" style="grid-template-columns:repeat(6,1fr);"></div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="team.eyebrow">Jamoa</span>
+        <h2 data-i18n="team.title">Loyihalar ortidagi jamoa</h2>
+      </div>
+      <div class="grid grid-2" id="team-grid"></div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section" style="background:var(--surface); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="why.eyebrow">Nega aynan biz</span>
+        <h2 data-i18n="why.title">Mijozlar nega DasturLab'ni tanlaydi</h2>
+      </div>
+      <div class="grid grid-4" id="why-grid"></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="testi.eyebrow">Fikrlar</span>
+        <h2 data-i18n="testi.title">Mijozlarimiz fikri</h2>
+      </div>
+      <div class="grid grid-3" id="testimonials-grid"></div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section" id="blog">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="blog.eyebrow">Blog</span>
+        <h2 data-i18n="blog.title">So‘nggi maqolalar</h2>
+      </div>
+      <div class="grid grid-4" id="blog-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="contact.title">Loyihangiz bormi? Birgalikda amalga oshiramiz.</h2>
+      </div>
+      <div class="contact-wrap">
+        <form id="contact-form" novalidate>
+          <div class="form-row" data-field="name">
+            <label for="f-name" data-i18n="contact.name">Ism</label>
+            <input type="text" id="f-name" name="name" required>
+            <div class="form-error" data-i18n="contact.required">Bu maydon majburiy</div>
+          </div>
+          <div class="grid grid-2">
+            <div class="form-row" data-field="telegram">
+              <label for="f-tg" data-i18n="contact.telegram">Telegram username</label>
+              <input type="text" id="f-tg" name="telegram" placeholder="@username">
+            </div>
+            <div class="form-row" data-field="email">
+              <label for="f-email" data-i18n="contact.email">Email</label>
+              <input type="email" id="f-email" name="email" required>
+              <div class="form-error" data-i18n="contact.invalidEmail">Email manzil noto‘g‘ri</div>
+            </div>
+          </div>
+          <div class="grid grid-2">
+            <div class="form-row" data-field="phone">
+              <label for="f-phone" data-i18n="contact.phone">Telefon</label>
+              <input type="tel" id="f-phone" name="phone" placeholder="+998">
+            </div>
+            <div class="form-row" data-field="projectType">
+              <label for="f-type" data-i18n="contact.type">Loyiha turi</label>
+              <select id="f-type" name="projectType">
+                <option value="web">Web</option>
+                <option value="mobile">Mobile</option>
+                <option value="bot">Telegram Bot</option>
+                <option value="ai">AI</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row" data-field="budget">
+            <label for="f-budget" data-i18n="contact.budget">Budjet</label>
+            <input type="text" id="f-budget" name="budget" placeholder="$500 - $2000">
+          </div>
+          <div class="form-row" data-field="message">
+            <label for="f-message" data-i18n="contact.message">Loyiha haqida</label>
+            <textarea id="f-message" name="message" rows="4" required></textarea>
+            <div class="form-error" data-i18n="contact.required">Bu maydon majburiy</div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.submit">So‘rov yuborish</button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+        <div class="contact-cards">
+          <div class="contact-pill"><div class="ic">✈️</div><div>Telegram <br><span style="color:var(--text-muted); font-size:.85rem;">PLACEHOLDER — t.me/example</span></div></div>
+          <div class="contact-pill"><div class="ic">📸</div><div>Instagram <br><span style="color:var(--text-muted); font-size:.85rem;">PLACEHOLDER — instagram.com/example</span></div></div>
+          <div class="contact-pill"><div class="ic">💻</div><div>GitHub <br><span style="color:var(--text-muted); font-size:.85rem;">PLACEHOLDER — github.com/example</span></div></div>
+          <div class="contact-pill"><div class="ic">🔗</div><div>LinkedIn <br><span style="color:var(--text-muted); font-size:.85rem;">PLACEHOLDER — linkedin.com/company/example</span></div></div>
+          <div class="contact-pill"><div class="ic">✉️</div><div>Email <br><span style="color:var(--text-muted); font-size:.85rem;">PLACEHOLDER — info@example.com</span></div></div>
+          <div class="contact-pill"><div class="ic">📞</div><div>Telefon <br><span style="color:var(--text-muted); font-size:.85rem;">PLACEHOLDER — +998 90 000 00 00</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section section">
+    <div class="container">
+      <h2 data-i18n="cta.title">Keyingi loyihangizni bugun boshlang.</h2>
+      <p style="margin:0 auto; max-width:520px;" data-i18n="cta.text">G‘oyangiz bor. Biz esa uni ishlaydigan raqamli mahsulotga aylantirishga yordam beramiz.</p>
+      <a href="#contact" class="btn btn-primary" data-i18n="cta.button">DasturLab bilan bog‘lanish</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="brand">Dastur<span style="color:var(--accent);">Lab</span></a>
+        <p style="margin-top:14px; max-width:32ch;">DasturLab — zamonaviy veb-saytlar, mobil ilovalar, Telegram botlar va AI yechimlar yaratuvchi dasturlash jamoasi.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.nav">Navigatsiya</h4>
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">Biz haqimizda</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Loyihalar</a></li>
+          <li><a href="#team" data-i18n="nav.team">Jamoa</a></li>
+          <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.services">Xizmatlar</h4>
+        <ul>
+          <li><a href="#services">Veb-saytlar</a></li>
+          <li><a href="#services">Mobil ilovalar</a></li>
+          <li><a href="#services">Telegram botlar</a></li>
+          <li><a href="#services">AI integratsiyasi</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.legal">Huquqiy</h4>
+        <ul>
+          <li><a href="privacy.html" data-i18n="footer.privacy">Maxfiylik siyosati</a></li>
+          <li><a href="terms.html" data-i18n="footer.terms">Foydalanish shartlari</a></li>
+          <li><a href="cookies.html" data-i18n="footer.cookies">Cookie siyosati</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DasturLab. <span data-i18n="footer.rights">Barcha huquqlar himoyalangan.</span></span>
+      <span>info@example.com · +998 90 000 00 00</span>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
+  <p data-i18n="cookie.text">Saytdan qulay foydalanish uchun cookie-fayllardan foydalanamiz.</p>
+  <div class="cookie-actions">
+    <button class="btn btn-ghost" data-decline data-i18n="cookie.decline">Rad etish</button>
+    <button class="btn btn-primary" data-accept data-i18n="cookie.accept">Qabul qilish</button>
+  </div>
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/api.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
